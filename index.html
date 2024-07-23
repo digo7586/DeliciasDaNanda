@@ -16,12 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
-    <title>Delicias da Nanda</title>
+    <title>Delicias</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <!-- <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="#home"><img src="./assets/img/logo.png" alt="logo confeitaria" width="200"
                         height="100"></a>
@@ -54,6 +54,46 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+        </nav> -->
+
+         <nav class="" id="navigation">
+            <div class="wrapper">
+                <a class="logo" href="#home">
+                    <img src="" alt="logo confeitaria">
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li><a onclick="closeMenu" href="#home">Home</a></li>
+                        <li><a onclick="closeMenu" href="#doces">Doces</a></li>
+                        <li><a onclick="closeMenu" href="#bolos">Bolos</a></li>
+                        <li><a onclick="closeMenu" href="#cestas">Cestas</a></li>
+                        <li><a onclick="closeMenu" href="#contato">Contato</a></li>
+                    </ul>
+
+                    <a href="#home"><img class="logo" onclick="closeMenu()" src="" alt=""></a>
+                </div>
+
+                <button 
+                aria-expanded="false"
+                aria-label="Abrir menu"
+                onclick="openMenu()" 
+                class="open-menu">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </button>
+                <button
+                aria-expanded="true"
+                aria-label="Fechar menu"
+                onclick="closeMenu()" 
+                class="close-menu">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                </button>
             </div>
         </nav>
     </header>
